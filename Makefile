@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=`pkg-config --cflags --libs alsa`
+CFLAGS=`pkg-config --cflags --libs alsa x11`
 TARGET=volume
 
-all: volume.c
-	$(CC) $(CFLAGS) -o volume $(TARGET).c
+all: volume.c x11.c
+	$(CC) $(CFLAGS) -o volume $(TARGET).c x11.c

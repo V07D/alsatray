@@ -58,8 +58,10 @@ int main() {
 	const char *card = "default";
 	const char *selem_name = "Master";
 	
-	SetAlsaSwitchMute(card, selem_name);
-	SetAlsaVolume(card, selem_name, 30);
+	//~ SetAlsaSwitchMute(card, selem_name);
+	//~ SetAlsaVolume(card, selem_name, 30);
+	
+	AlsaTrayView();
 	
 	return 0;
 }
